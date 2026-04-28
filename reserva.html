@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reserva01.css">
+    <title>Reservacion</title>
+
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><img src="items/logo.png" alt="logo"></div>
+        <button id="btn-logout" class="btn-logout">Cerrar Sesión</button>
+    </nav>
+
+    <div class="container">
+        <h1>Reserva tu Mesa</h1>
+
+        <h2 class="section-title">1. Datos de la Reserva</h2>
+        <div class="reserva-card">
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+                <label>Fecha</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label>Personas</label>
+                <select>
+                    <option>2 Personas</option>
+                    <option>4 Personas</option>
+                    <option>6 Personas</option>
+                </select>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Agrega Platillos a la Reserva</h2>
+        <div class="menu-grid">
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" alt="Corte">
+                <div class="dish-content">
+                    <h3>Corte Rib Eye Prime</h3>
+                    <span class="price">$45.00</span>
+                    <p style="color: var(--text-muted); font-size: 0.8rem;">Corte premium de 400g con mantequilla de romero.</p>
+                    <div class="selector">
+                        <label>Cantidad:</label>
+                        <input type="number" class="qty-input" value="0" min="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1512152272829-e3139592d56f?auto=format&fit=crop&w=400&q=80" alt="Burger">
+                <div class="dish-content">
+                    <h3>Burger Black Truffle</h3>
+                    <span class="price">$18.00</span>
+                    <p style="color: var(--text-muted); font-size: 0.8rem;">Pan brioche, aceite de trufa y queso suizo.</p>
+                    <div class="selector">
+                        <label>Cantidad:</label>
+                        <input type="number" class="qty-input" value="0" min="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=400&q=80" alt="Postre">
+                <div class="dish-content">
+                    <h3>Donas de la Casa</h3>
+                    <span class="price">$12.00</span>
+                    <p style="color: var(--text-muted); font-size: 0.8rem;">Glaseadas con chocolate amargo y avellana.</p>
+                    <div class="selector">
+                        <label>Cantidad:</label>
+                        <input type="number" class="qty-input" value="0" min="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-confirm">Confirmar Reserva y Pedido</button>
+    </div>
+
+</body>
+</html>

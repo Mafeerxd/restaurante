@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reserva01.css">
+    <link rel="stylesheet" href="css/reservaform.css">
+    <title>Inicia sesión</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurante</h1>
+    </header>
+
+    <div id="status">Cargando estado...</div>
+    
+    <div class="auth-container">
+        <div class="tabs">
+            <button id="tab-login" class="active">Iniciar Sesión</button>
+            <button id="tab-register">Registrarse</button>
+        </div>
+
+        <form id="login-form">
+            <h2>Bienvenido de nuevo</h2>
+            <input type="email" id="login-email" placeholder="Correo electrónico" required>
+            <input type="password" id="login-password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <form id="register-form" style="display: none;">
+            <h2>Crear cuenta</h2>
+            <input type="text" id="reg-nombre" placeholder="Nombre completo" required>
+            <input type="email" id="reg-email" placeholder="Correo electrónico" required>
+            <input type="password" id="reg-password" placeholder="Contraseña" required>
+            <button type="submit">Registrar Actividad</button>
+        </form>
+
+        <p id="auth-error"></p>
+        
+        <div class="separator">
+            <span>o continúa con</span>
+        </div>
+
+        <div class="social-auth">
+            <button id="btn-google" class="btn-social">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"> 
+                <span>Google</span>
+            </button>
+            <button id="btn-facebook" class="btn-social">
+                <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="Facebook"> 
+                <span>Facebook</span>
+            </button>
+            <button id="btn-github" class="btn-social github">
+                <img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub"> 
+                <span>GitHub</span>
+            </button>
+        </div>
+    </div>
+</body>
+
+<script type="module" src="js/firebase-config.js"></script>
+<script type="module" src="js/auth-logic.js"></script>
+</html>
